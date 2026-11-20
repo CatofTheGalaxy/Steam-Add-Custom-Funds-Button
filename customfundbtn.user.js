@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		[Steam] Custom Top-Up Button
 // @namespace	http://tampermonkey.net/
-// @version		1.02
+// @version		1.03
 // @description Allows you to customize the Steam Wallet Add Funds button.
 // @match		https://store.steampowered.com/steamaccount/addfunds*
 // @grant		none
@@ -28,7 +28,7 @@
 		const div = document.createElement('div');
 		div.className = 'game_area_purchase_game addfunds_area_purchase_game';
 		div.style.cssText = 'margin-bottom:20px';
-		div.innerHTML = `<div style="display:flex;align-items:center;justify-content:space-between"><div><div style="color:#fff;font-size:20px;margin-bottom:4px">Custom Add Funds</div><div style="font-size:12px;color:#8f98a0">Enter custom amount (Minimum: ${min} ${currency})</div></div><div style="display:flex;align-items:center;background:#000;border:2px solid #000;border-radius:2px;height:30px;overflow:hidden"><div style="display:flex;align-items:center;gap:6px;padding:0 10px;height:100%"><input type="number" id="custom_amount" value="${min}" step="any" style="background:transparent;border:0;color:#fff;width:75px;font-size:14px;outline:none;text-align:right"><span style="color:#fff;font-size:14px;font-weight:bold">${currency}</span></div><button id="btn_custom_submit">Add Funds</button></div></div>`;
+		div.innerHTML = `<div style="display:flex;align-items:center;justify-content:space-between"><div><div style="color:#fff;font-size:20px;line-height:24px;margin-bottom:0">Custom Add Funds</div><div style="font-size:14px;line-height:18px;color:#c6d4df">Enter custom amount (Minimum: ${min} ${currency})</div></div><div style="display:flex;align-items:center;background:#000;border:2px solid #000;border-radius:2px;height:30px;overflow:hidden;transform:translateX(6px)"><div style="display:flex;align-items:center;gap:6px;padding:0 10px;height:100%"><input type="number" id="custom_amount" value="${min}" step="any" style="background:transparent;border:0;color:#fff;width:75px;font-size:14px;outline:none;text-align:right"><span style="color:#fff;font-size:14px;font-weight:bold">${currency}</span></div><button id="btn_custom_submit">Add Funds</button></div></div>`;
 		target.prepend(div);
 
 		const input = div.querySelector('#custom_amount'),
