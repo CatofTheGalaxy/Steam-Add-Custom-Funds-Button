@@ -1,4 +1,4 @@
-# [Steam] Custom Top-Up Button
+# [Steam] Add Custom Funds Button
 
 A Tampermonkey userscript that adds a custom amount input and an **Add Funds** button to the Steam Wallet Add Funds page.
 
@@ -39,4 +39,4 @@ This script only works on the following page:
 
 ## Install Script
 
-[**Install [Steam] Custom Top-Up Button**](https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button/raw/refs/heads/main/customfundbtn.user.js)
+[**Install [Steam] Add Custom Funds Button**](https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button/raw/refs/heads/main/customfundbtn.user.js)
