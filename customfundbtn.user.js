@@ -1,10 +1,16 @@
+
 // ==UserScript==
-// @name		[Steam] Custom Top-Up Button
-// @namespace	http://tampermonkey.net/
-// @version		1.03
-// @description Allows you to customize the Steam Wallet Add Funds button.
-// @match		https://store.steampowered.com/steamaccount/addfunds*
-// @grant		none
+// @name         [Steam] Add Custom Funds Button
+// @namespace    https://github.com/CatofTheGalaxy/
+// @version      1.04
+// @author       CatofTheGalaxy
+// @description  Customize the Steam Wallet Add Funds button with custom amounts.
+// @homepageURL  https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button
+// @supportURL   https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button/issues
+// @updateURL    https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button/raw/refs/heads/main/customfundbtn.user.js
+// @downloadURL  https://github.com/CatofTheGalaxy/Steam-Add-Custom-Funds-Button/raw/refs/heads/main/customfundbtn.user.js
+// @match        https://store.steampowered.com/steamaccount/addfunds*
+// @grant        none
 // ==/UserScript==
 /* global submitAddFunds */
 
